@@ -1,0 +1,16 @@
+program diskon;
+uses crt;
+var tb,t: real;
+begin
+clrscr;
+    write('Masukkan total belajaan anda : '); readln(tb);
+    if (tb<100000) then
+    t:=tb*1
+    else if (tb > 100000) and (tb <499999 )then 
+    t:= tb*0.9
+    else if (tb> 500000) and (tb < 999999) then 
+    t:= tb*0.8
+    else 
+    t:= tb*0.7;
+    write('Total yang harus dibayar adalah : ',t:5:2);
+end.
