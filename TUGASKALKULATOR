@@ -1,0 +1,27 @@
+program kalkulator;
+uses crt;
+var 
+bil1,bil2,Hasil :real;
+pilih : char;
+
+begin
+clrscr;
+    writeln('Pilih jenis operasi ');
+    writeln('1. Penjumlahan');
+    writeln('2.Pengurangan');
+    writeln('3. Perkalian');
+    writeln('4. Pembagian');
+    write (': '); readln(pilih);
+    write('Masukkan bilangan pertama : '); readln(bil1);
+    write('Masukkan bilangan kedua : '); readln(bil2);
+    case (pilih) of 
+    'A' : Hasil :=bil1+bil2;
+    'B' : Hasil := bil1- bil2;
+    'C' : Hasil := bil1*bil2;
+    'D' : Hasil := bil1/bil2;
+    else 
+    write ('Operasi tidak valid');
+    end;
+write('Hasil Operasi Aritmatika : ',Hasil:5:2);
+    
+end.    
